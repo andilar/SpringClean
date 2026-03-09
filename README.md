@@ -15,12 +15,21 @@ A Python maintenance script for Raspberry Pi — cleans up your system in one ru
 
 ## Usage
 
+### One-liner (download & run)
+
 ```bash
 # Full cleanup (recommended):
-sudo python3 spring_clean.py
+curl -sSL https://raw.githubusercontent.com/andilar/SpringClean/main/spring_clean.py | sudo python3
 
 # Read-only / inspect only:
-python3 spring_clean.py
+curl -sSL https://raw.githubusercontent.com/andilar/SpringClean/main/spring_clean.py | python3
+```
+
+### Oder erst herunterladen, dann ausführen
+
+```bash
+curl -sSLO https://raw.githubusercontent.com/andilar/SpringClean/main/spring_clean.py
+sudo python3 spring_clean.py
 ```
 
 > Some steps (apt update, journal vacuum, temp cleanup) require root privileges.
