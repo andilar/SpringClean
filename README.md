@@ -1,4 +1,4 @@
-# 🌸 SpringClean
+# 🌸 SpringClean for Raspbyerry Pi
 
 A Python maintenance script for Raspberry Pi — cleans up your system in one run.
 
