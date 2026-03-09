@@ -25,7 +25,7 @@ curl -sSL https://raw.githubusercontent.com/andilar/SpringClean/main/spring_clea
 curl -sSL https://raw.githubusercontent.com/andilar/SpringClean/main/spring_clean.py | python3
 ```
 
-### Oder erst herunterladen, dann ausführen
+### Or download first, then run
 
 ```bash
 curl -sSLO https://raw.githubusercontent.com/andilar/SpringClean/main/spring_clean.py
