@@ -208,7 +208,13 @@ def offer_fsck():
     marker = Path("/forcefsck")
     info("Running fsck on next boot can detect SD card errors.")
     if os.geteuid() == 0:
-        ans = input("  Force fsck on next boot? [y/N] ").strip().lower()
+        try:
+            with open("/dev/tty") as tty:
+                sys.stdout.write("  Force fsck on next boot? [y/N] ")
+                sys.stdout.flush()
+                ans = tty.readline().strip().lower()
+        except OSError:
+            ans = ""
         if ans == "y":
             marker.touch()
             ok("/forcefsck set — fsck will run on next reboot")
