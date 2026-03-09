@@ -35,7 +35,7 @@ def run(cmd, capture=True):
     result = subprocess.run(
         cmd, shell=True, capture_output=capture, text=True
     )
-    return result.stdout.strip(), result.returncode
+    return (result.stdout.strip() if result.stdout else ""), result.returncode
 
 
 def section(title):
