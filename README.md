@@ -1,6 +1,6 @@
 # 🌸 SpringClean for Raspbyerry Pi
 
-A Python maintenance script for Raspberry Pi — cleans up your system in one run.
+A Python maintenance script for Raspberry Pi, cleans up your system in one run.
 
 ## Features
 
@@ -14,6 +14,8 @@ A Python maintenance script for Raspberry Pi — cleans up your system in one ru
 - 💾 Optional fsck on next boot
 
 ## Usage
+
+Usage at your own risk.
 
 ### One-liner (download & run)
 
