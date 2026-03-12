@@ -22,7 +22,10 @@ Usage at your own risk.
 ```bash
 # Full cleanup (recommended):
 curl -sSL https://raw.githubusercontent.com/andilar/SpringClean/main/spring_clean.py | sudo python3
+```
+or
 
+```bash
 # Read-only / inspect only:
 curl -sSL https://raw.githubusercontent.com/andilar/SpringClean/main/spring_clean.py | python3
 ```
